@@ -22,7 +22,11 @@ The live application is deployed at Heroku.
 
 ## License
 MIT License
-Copyright (c) 2021-Present Aaron Au Yoong. All rights reserved.
+<br>
+Backend Code: Copyright © 2021-Present Aaron Au Yoong. All rights reserved.
+<br>
+Frontend Code: © 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+
 
 ## Installation
 If you would like to install the app to your local computer, please follow the installation steps below. 
@@ -65,11 +69,13 @@ $ node server.js
 For contributions, you may follow the industry standard: [Contributor Covenant](https://www.contributor-covenant.org/)
 
 ## Credits
-License badges used in this project were retrieved from GitHub user's `lukas-h` license-badge markdown file: [Markdown License badges](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba)
+License badges used in this project were retrieved from GitHub user's `lukas-h` license-badge markdown file: [Markdown License badges](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba).
 
-Basic NPM Packages were used: [NPM Packages](https://www.npmjs.com/)
+Basic NPM Packages were used: [NPM Packages](https://www.npmjs.com/).
 
-For enabling the delete function in the application, the UUIDv4 was installed: [UUID NPM Package](https://www.npmjs.com/package/uuid)
+For enabling the delete function in the application, the UUIDv4 was installed: [UUID NPM Package](https://www.npmjs.com/package/uuid).
+
+Starter code provided by Monash Coding Bootcamp. 
 
 ## Tests
 n/a
