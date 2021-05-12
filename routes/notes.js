@@ -1,40 +1,44 @@
 const fs = require("fs");
-const path = require("path");
 const express = require("express");
 const router = express.Router();
-const notes = require('../db/db.json');
-
+const notesDB = require("../db/db.json");
 // NPM package that allows adding of unique IDs
-const { v4: uuidv4 } = require('uuid');
+const { v4: uuidv4 } = require("uuid");
 
-// GET
-// * `GET /api/notes/` should read the `db.json` file and return all saved notes as JSON.
-// router.get("/", (req, res) => {
-// 	res.json(notesData);
-// });
+module.exports = (router) => {
+	// * `GET /api/notes/` should read the `db.json` file and return all saved notes as JSON.
+	router.get("/", (req, res) => {
+		res.json(notesDB);
+	});
 
-module.exports = (app) => {
+	// * `POST /api/notes` should receive a new note to save on the request body,
+	// add it to the `db.json` file, and then return the new note to the client.
+	router.post("/", (req, res) => {
+		const notesID = uuidv4();
+		const notesData = {
+			title: req.body.title,
+			text: req.body.text,
+			id: notesID,
+		};
 
-    router.get("/", function (req, res) {
+		console.log(" ----- This is testing the notesData ----- ", notesData);
 
-    });
-    
-    
-    // POST
-    // * `POST /api/notes` should receive a new note to save on the request body,
-    // add it to the `db.json` file, and then return the new note to the client.
-    router.post("/", (req, res) => {
+		notesDB.push(notesData);
 
+		fs.writeFile("../db/db.json", JSON.stringify(notesDB), (err) => {
+			if (err) throw (err);
+			console.log(" ----- Successfully saved the new note! ----- ");
+		});
 
-    });
-    
-    router.put("/:id", function(req, res) {
+		res.json(notesDB);
+	});
 
-    });
-    
-    router.delete("/:id", function (req, res) {
-    
+	// * `DELETE /api/notes/:id` should receive a query parameter containing the id of a note to delete. 
+	// In order to delete a note, you'll need to read all notes from the `db.json` file, remove the note with the given `id` property, 
+	// and then rewrite the notes to the `db.json` file.
+	router.delete("/:id", (req, res) => {
 
-    });
-    
-}
+		console.log(" ----- This is a delete test for some notes ----- ", notesDB);
+
+	});
+};
