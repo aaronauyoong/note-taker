@@ -1,7 +1,7 @@
 # Team Profile Generator
 Project Owner: Aaron Au Yoong
 
-Live Link: <Insert Live Link Here>
+Heroku Live Application: <https://note-taker-aaronauyoong.herokuapp.com/>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://choosealicense.com/licenses/mit/)
 
@@ -26,6 +26,8 @@ This application makes use of the following technologies:
 * Express JS
 * UUIDV4
 * Heroku (App Deployment)
+
+This note taker application allows you to create new notes, view and update existing notes, and delete unwanted notes. 
 
 ## License
 MIT License
@@ -56,7 +58,7 @@ npm i uuidv4
 Congratulations! You have successfully installed the note taker application in your local computer. 
 
 ## Usage
-If you prefer to use the live app deployed at Heroku, please visit the link here: <Insert Link Once Deployed>
+If you prefer to use the live app deployed at Heroku, please visit the link here: <https://note-taker-aaronauyoong.herokuapp.com/>
 
 If you have followed the instructions above and installed the application to your local device, please follow the instructions below regarding local usage. 
 
