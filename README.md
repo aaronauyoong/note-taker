@@ -1,4 +1,7 @@
-# Team Profile Generator
+<img src="images/note-taker-readme-banner.png" width="100%">
+<br>
+
+# Note Taker Application
 Project Owner: Aaron Au Yoong
 
 Heroku Live Application: <https://note-taker-aaronauyoong.herokuapp.com/>
