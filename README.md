@@ -65,6 +65,12 @@ $ node server.js
 
 `http://localhost:5000/`
 
+4. Congratulations! You have successfully launched the note taker application. You will be shown the welcome page below:
+<img src="images/note-taker-screenshot1.png" width="80%">
+
+5. Clicking on the "Get Started" button will bring you to the /notes application page (as shown below). You may now begin taking notes!
+<img src="images/note-taker-screenshot2.png" width="80%"> 
+
 ## Contributions
 For contributions, you may follow the industry standard: [Contributor Covenant](https://www.contributor-covenant.org/)
 
