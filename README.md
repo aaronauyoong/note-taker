@@ -1,5 +1,4 @@
 <img src="images/note-taker-readme-banner.png" width="100%">
-<br>
 
 # Note Taker Application
 Project Owner: Aaron Au Yoong
